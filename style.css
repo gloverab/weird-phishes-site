@@ -79,7 +79,7 @@ a {
   width: calc(35vw * 1.78);
   height: calc(35vw + 200px);
   background-color: #FEFCFA;
-  margin-top: 80px;
+  padding-top: 80px;
 }
 
 .nav-bar {
