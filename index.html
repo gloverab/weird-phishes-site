@@ -5,16 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script>
+  <script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("header").style.height = "60px";
+        document.getElementById("logo-wrap").style['min-width'] = "100px";
+        const navs = document.getElementsByClassName("nav")
+        for (i = 0; i < navs.length; i++) {
+          navs[i].style['font-size'] = '18px'
+        }
+      } else {
+        document.getElementById("header").style.height = "80px";
+        document.getElementById("logo-wrap").style['min-width'] = "400px";
+        const navs = document.getElementsByClassName("nav")
+        for (i = 0; i < navs.length; i++) {
+          navs[i].style['font-size'] = '24px'
+        }
+      }
+    }
+  </script>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Document</title>
+  <title>Weird Phishes - Radiohead + Phish</title>
 </head>
 <body>
   <div class='App'>
-    <div class='nav-bar-wrapper'>
+    <div class='nav-bar-wrapper' id='header'>
       <div class='container'>
         <div class='nav-bar'>
-          <div class='logo-wrap'>
-            <a href="/">
+          <div class='logo-wrap' id='logo-wrap'>
+            <a href="#/">
               <svg
     width='100%'
     style={style}
@@ -174,13 +195,13 @@
               </a>
             </li>
             <li>
-              <a smooth href="#videos">
-                <h2 class='nav'>Videos</h2>
+              <a smooth href="#about">
+                <h2 class='nav'>About</h2>
               </a>
             </li>
             <li>
-              <a smooth href="#about">
-                <h2 class='nav'>About</h2>
+              <a smooth href="#videos">
+                <h2 class='nav'>Videos</h2>
               </a>
             </li>
             <li>
@@ -243,7 +264,17 @@
   </div>
   <div class='container'>
     <div class='feature-wrapper'>
-
+      <div class='about-wrapper'>
+        <h2>Weird Phishes</h2>
+        <p>Weird Phishes​ is exactly what it sounds like - the iconic melancholy rock songs of Radiohead completely reborn as danceable, crunchy jams. With full-album performances, unexpected mashups, and gluey funk-driven improvisation, their jam-heavy take on alt-rock classics has sparked an unexpected energy in audiences across the northeast.</p>
+        <p>A quick glance at the band’s social media gives a glimpse into why this unlikely mashup proves worthwhile. “Bought tickets on a whim because I love both bands, had wanted to check out the club, and thought it would be amusing. I was not expecting such incredible musicianship and thought that had gone into their set...it was one of the best shows I’ve seen in years.” Said one user. “Clean, creative mashups of a favorite album and great Phish selections. Great energy.” says another. “Impossibly excellent show.”</p>
+        <p>In July 2019, Weird Phishes solidified their place in the New England jam community, playing back-to-back afterparties after Phish’s performances at Fenway Park. With a growing fanbase and an ever-changing setlist, the band continued their breakout year with a fall run to the midwest.</p>
+        <p>Weird Phishes will cap off 2019 with more northeast shows including Phish afterparties in Providence (11/29) and New York (12/28).</p>
+        <img class='about-photo' src='wp-live-img.png' />
+      </div>
+      <!-- <div class='about-wrapper'>
+        <img class='about-photo' src='wp-live-img.png' />
+      </div> -->
     </div>
   </div>
 
