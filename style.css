@@ -34,6 +34,10 @@ a {
   text-decoration: none;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 .hero {
   width: 100%;
   height: auto;
@@ -181,4 +185,85 @@ a {
   margin-bottom: 25px;
   text-align: center;
   width: 570px;
+}
+
+.contact-card.social {
+  margin-top: 90px;
+}
+
+.social-icons-wrapper {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  align-content: space-between;
+  justify-content: space-evenly;
+  width: 400px;
+  margin-bottom: 50px;
+}
+
+.social-link {
+  color: #363636;
+  transition: .2s ease all;
+}
+
+.social-link:hover {
+  color: #333678;
+}
+
+.fab {
+  font-size: 50px;
+}
+
+.contact-top-row {
+  margin: 0;
+}
+
+.contact-bottom-row {
+  margin-top: 4px;
+}
+
+.contact-bottom-row a {
+  color: black;
+  font-weight: 600;
+}
+
+.contact-bottom-row a:hover {
+  text-decoration: underline;
+  color: black;
+  font-weight: 600;
+}
+
+#mc_embed_signup label {
+  display: block;
+}
+
+#mc_embed_signup input {
+  width: 400px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  border: 1px solid #191e24;
+  outline: none;
+  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+#mc_embed_signup .clear {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+#mc_embed_signup input.button {
+  border-radius: 0;
+  background-color: #191e24;
+  color: #FEFCFA;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  /* border: 3px solid #191e24; */
+  
 }
