@@ -80,10 +80,11 @@ a {
 }
 
 .hero .container {
+  position: relative;
   width: calc(35vw * 1.78);
-  height: calc(35vw + 200px);
+  /* height: calc(35vw + 200px); */
   background-color: #FEFCFA;
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 .nav-bar {
@@ -151,9 +152,31 @@ a {
   box-shadow: 0px 0px 100px #000;
 }
 
+.feature-image-wrapper {
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 10px;
+  box-shadow: 0px 0px 40px #000;
+  transition: .2s ease all;
+}
+
+.feature-image-wrapper:hover {
+  box-shadow: 0px 0px 70px #000;
+}
+
+.hero .feature-wrapper h2 {
+  margin-left: 7%;
+}
+
+.feature-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
 .divider {
   background-color: #191e24;
   padding: 10px 0 10px 0;
+  width: 100%;
 }
 
 .divider {
@@ -265,5 +288,82 @@ a {
   margin: 0;
   padding: 0;
   /* border: 3px solid #191e24; */
-  
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    min-width: 100%;
+  }
+
+  .logo-wrap {
+    min-width: 60%;
+    width: 60%;
+  }
+
+  .feature-wrapper {
+    padding: 0;
+    margin: 10%;
+    margin-top: calc(10% + 20px)
+  }
+
+  .hero .feature-wrapper h2 {
+    margin-left: 0;
+    font-size: 18px;
+  }
+
+  .feature-image-wrapper {
+    /* margin: 10%; */
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .hero .container {
+    width: 100%;
+  }
+
+  .about-wrapper {
+    column-count: 1;
+  }
+
+  .container.video-section-wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .video-wrapper {
+    width: calc(100vw - 40px);
+    height: calc(100vw / 1.78 - 40px);
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .contact-card {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .contact-card.social {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .social-icons-wrapper {
+    width: 80%;
+  }
+
+  #mc_embed_signup input {
+    width: 80%;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    border: 1px solid #191e24;
+    outline: none;
+    box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+    margin-bottom: 10px;
+  }
 }
