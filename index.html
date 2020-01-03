@@ -9,9 +9,9 @@
   <script src="https://kit.fontawesome.com/face23387b.js" crossorigin="anonymous"></script>
   <script>
     window.onscroll = function() {scrollFunction()};
-
+    let expandedMenu = false
     function scrollFunction() {
-      if (document.body.offsetWidth > 500) {
+      if (document.body.offsetWidth > 600) {
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
           document.getElementById("header").style.height = "60px";
           document.getElementById("logo-wrap").style['min-width'] = "100px";
@@ -27,6 +27,28 @@
             navs[i].style['font-size'] = '24px'
           }
         }
+      } else {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+          document.getElementById("header").style.height = "50px";
+          document.getElementById("logo-wrap").style['margin-top'] = "12px";
+          document.getElementById("burger-wrapper").style['top'] = "9px";
+        } else {
+          document.getElementById("header").style.height = "80px";
+          document.getElementById("logo-wrap").style['margin-top'] = "30px";
+          document.getElementById("burger-wrapper").style['top'] = "25px";
+        }
+      }
+    }
+
+    function expandMenu() {
+      if (!expandedMenu) {
+        document.getElementById('menu-list').style['z-index'] = "5"
+        document.getElementById('menu-list').style['min-height'] = "100vh"
+        expandedMenu = true
+      } else {
+        document.getElementById('menu-list').style['z-index'] = "0"
+        document.getElementById('menu-list').style['min-height'] = "0"
+        expandedMenu = false
       }
     }
   </script>
@@ -214,28 +236,31 @@
   </svg>
             </a>
           </div>
-          <ul>
+          <ul id='menu-list'>
             <li>
-              <a smooth href="#shows">
+              <a smooth href="#shows" onClick="expandMenu()">
                 <h2 class='nav'>Shows</h2>
               </a>
             </li>
             <li>
-              <a smooth href="#about">
+              <a smooth href="#about" onClick="expandMenu()">
                 <h2 class='nav'>About</h2>
               </a>
             </li>
             <li>
-              <a smooth href="#videos">
+              <a smooth href="#videos" onClick="expandMenu()">
                 <h2 class='nav'>Videos</h2>
               </a>
             </li>
             <li>
-              <a smooth href="#contact">
+              <a smooth href="#contact" onClick="expandMenu()">
                 <h2 class='nav'>Contact</h2>
               </a>
             </li>
           </ul>
+          <div id='burger-wrapper' class='burger-wrapper' onClick="expandMenu()">
+            <i class="fas fa-bars"></i>
+          </div>
         </div>
       </div>
     </div>
@@ -252,8 +277,8 @@
         <div class='feature-wrapper'>
           <h2>Featured Event:</h2>
           <div class='feature-image-wrapper'>
-            <a href='https://withfriends.co/event/3282455/weird_phishes_msg_night_1_phish_afterparty_21and' target='_blank'>
-              <img src='wp-phish-msg-sq.png' />
+            <a href='https://www.ticketweb.com/event/weird-phishes-escaper-thunder-road-tickets/10197745' target='_blank'>
+              <img src='in-rainbows-weird-phishes-125.png' />
             </a>
           </div>
           <!-- <div class='video-wrapper'>

@@ -45,6 +45,10 @@ a {
   /* background-image: url("wp-tile-sq-smm.png") */
 }
 
+.burger-wrapper {
+  display: none;
+}
+
 .hero-half {
   width: 50%;
   height: 100%;
@@ -290,14 +294,44 @@ a {
   /* border: 3px solid #191e24; */
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .container {
     min-width: 100%;
   }
 
+  .nav-bar, .nav-bar ul {
+    flex-direction: column;
+    background-color: rgba(254, 252, 250, .9);
+    /* overflow: hidden; */
+  }
+
+  .nav-bar ul {
+    margin-top: 20px;
+    min-height: 0;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    transition: .25s ease-in-out all;
+  }
+
+  .fas {
+    font-size: 30px;
+  }
+
+  .burger-wrapper {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    transition: .2s ease all;
+  }
+
   .logo-wrap {
-    min-width: 60%;
-    width: 60%;
+    min-width: 75%;
+    width: 75%;
+    margin-top: 30px;
+    padding-right: 50px;
+    padding-left: 0;
   }
 
   .feature-wrapper {
