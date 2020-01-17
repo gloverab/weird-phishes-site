@@ -76,7 +76,7 @@ a {
 
 .container {
   min-width: 950px;
-  width: 80%;
+  width: 85%;
   max-width: 1300px;
   margin: 0 auto;
   background-color: #FEFCFA;
@@ -157,9 +157,10 @@ a {
 }
 
 .feature-image-wrapper {
-  margin-left: 7%;
-  margin-right: 7%;
-  margin-top: 10px;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 12px;
+  background-color: transparent;
   box-shadow: 0px 0px 40px #000;
   transition: .2s ease all;
 }
@@ -168,13 +169,33 @@ a {
   box-shadow: 0px 0px 70px #000;
 }
 
+.cta-wrapper {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.cta-wrapper a {
+  background-color: #333678;
+  opacity: .95;
+  color: #FEFCFA;
+  padding: 20px 30px;
+  transition: .2s ease all;
+  font-weight: 600;
+}
+
+.cta-wrapper a:hover {
+  background-color: #333678;
+  opacity: 1;
+}
+
 .hero .feature-wrapper h2 {
-  margin-left: 7%;
+  margin-left: 3%;
 }
 
 .feature-wrapper img {
   width: 100%;
   height: auto;
+  vertical-align: bottom;
 }
 
 .divider {
